@@ -13,6 +13,7 @@ class SearchBar extends Component {
             term: '',
         };
         this.onInputChange = this.onInputChange.bind(this);
+        this.onFormSubmit = this.onFormSubmit.bind(this);
     }
     onInputChange(event){
         if(!event){}
@@ -45,5 +46,5 @@ function mapStateToProps(dispatch){
     return bindActionCreators({fetchWeather},(dispatch));
 }
 
-export default connect(null, mapStateToProps)(SearchBar)
+export default connect(null, mapStateToProps)(SearchBar);
 
