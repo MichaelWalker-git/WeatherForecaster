@@ -5,7 +5,10 @@ import WeatherList from "../containers/weatherList";
 export default class App extends Component {
   render() {
     return (
-      <SearchBar/>
+        <div>
+            <SearchBar/>
+            <WeatherList/>
+        </div>
     );
   }
 }

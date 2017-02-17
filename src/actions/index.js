@@ -6,13 +6,7 @@ import axios from 'axios';
 
 export function fetchWeather(city) {
     const url = `${ROOT_URL}&q=${city},us`;
-    const request = axios.get(url)
-        .then( (response) => {
-        console.log("Response", response)
-    })
-        .catch((err) => {
-        console.log(err);
-        });
+    const request = axios.get(url);
 
     return {
         type: FETCH_WEATHER,
