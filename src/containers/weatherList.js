@@ -3,17 +3,43 @@
  */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import Chart from '../components/chart';
 
 class WeatherList extends Component {
-    renderWeather(cityData){
+
+    renderWeather = (cityData) => {
         const name = cityData.city.name;
+        let temperature = [];
+        let humidity = [];
+        let pressure = [];
+
+        function grabValues(cityData) {
+            let dataPoint = cityData.list.forEach(item => {
+                temperature = [item.main.temp, ...temperature];
+                humidity = [item.main.humidity, ...humidity];
+                pressure = [item.main.pressure, ...pressure];
+            });
+        }
+
+        grabValues(cityData);
+
         return (
             <tr key={name}>
                 <td>{name}</td>
-                <td>{cityData.list[0].main.temp}</td>
+                <td>
+                    <Chart data={temperature} color='green'/>
+                </td>
+                <td>
+                    <Chart data={humidity} color='red'/>
+
+                </td>
+                <td>
+                    <Chart data={pressure} color='blue'/>
+                </td>
             </tr>
-        )
-    }
+        );
+    };
+
 
     render(){
         return(
