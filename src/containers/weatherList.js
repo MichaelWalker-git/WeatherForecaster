@@ -4,6 +4,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Chart from '../components/chart';
+import GoogleMap from '../components/googleMap';
+
 
 class WeatherList extends Component {
 
@@ -12,20 +14,16 @@ class WeatherList extends Component {
         let temperature = [];
         let humidity = [];
         let pressure = [];
-
-        function grabValues(cityData) {
-            let dataPoint = cityData.list.forEach(item => {
+        const {lon, lat} = cityData.city.coord;
+        let dataPoint = cityData.list.forEach(item => {
                 temperature = [item.main.temp, ...temperature];
                 humidity = [item.main.humidity, ...humidity];
                 pressure = [item.main.pressure, ...pressure];
-            });
-        }
-
-        grabValues(cityData);
+        });
 
         return (
             <tr key={name}>
-                <td>{name}</td>
+                <td><GoogleMap lat={lat} lon={lon}/></td>
                 <td><Chart data={temperature} color='green' units="K"/></td>
                 <td><Chart data={pressure} color='red' units="hPa"/></td>
                 <td><Chart data={humidity} color='blue' units="%"/></td>
