@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10226a6d-a5a0-45f2-9d42-843373c83dfa" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="10226a6d-a5a0-45f2-9d42-843373c83dfa" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -106,8 +104,8 @@
       <file leaf-file-name="package-lock.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package-lock.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="5045" selection-start-line="5045" selection-end-line="5046" />
+            <state relative-caret-position="11809">
+              <caret line="5829" selection-start-line="5829" selection-end-line="5829" />
             </state>
           </provider>
         </entry>
@@ -330,12 +328,12 @@
       <workItem from="1487361168908" duration="11581000" />
       <workItem from="1510293045652" duration="2105000" />
       <workItem from="1549733112152" duration="1496000" />
-      <workItem from="1562814969960" duration="106000" />
+      <workItem from="1562814969960" duration="378000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19186000" />
+    <option name="totallyTimeSpent" value="19458000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -793,8 +791,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="5045" selection-start-line="5045" selection-end-line="5046" />
+        <state relative-caret-position="11809">
+          <caret line="5829" selection-start-line="5829" selection-end-line="5829" />
         </state>
       </provider>
     </entry>
